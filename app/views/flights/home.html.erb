@@ -1,0 +1,18 @@
+<h1 align="center">Compra tus tickets aqui!</h1>
+<div align="center">
+  <%= form_for :home, url: home_path  do |f| %>
+    <%= f.label :From %>
+    <%= f.text_field :from%><br>
+    <br>
+    <%= f.label :To %>
+    <%= f.text_field :to%><br>
+    <br>
+    <%= f.label :Pasajeros %>
+    <%= f.text_field :passengers%><br>
+    <br>
+    <%= f.label :Date %>
+    <%= f.date_field :date%><br>
+    <br>
+    <%= f.submit "Encuentra tus boletos"%>
+  <% end %>
+</div>
